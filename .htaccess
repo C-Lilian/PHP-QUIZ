@@ -1,0 +1,9 @@
+# Démarrage de moteur de ré-écriture d'URL
+RewriteEngine On
+#
+RewriteBase /php-quizz
+# Exclusion des dossiers et fichiers existants
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# Ré-écriture pour rediriger sur index.php
+RewriteRule ^(.+)$ index.php [QSA,L]
