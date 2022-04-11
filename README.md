@@ -1,2 +1,0 @@
-# PHP-QUIZ
-Quizz project
